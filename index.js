@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
 // catch all other routes 
 app.get('*', (req, res) => {
-    res.status(404).send('<h1>404 Page</h1>')
+    res.status(404).render('error404')
 })
 
 // listen for connections 
