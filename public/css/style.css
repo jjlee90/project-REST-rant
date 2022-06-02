@@ -1,18 +1,16 @@
 h1 {
-    text-align: center;
-    color: cornflowerblue;
-    
+  text-align: center;
+  color: cornflowerblue;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .tacos {
-    width: 40%;
+  width: 40%;
 }
 
 .error {
-    width: 40%;
+  width: 40%;
 }
-
