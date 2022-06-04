@@ -10,7 +10,8 @@ router.get("/new", (req, res) => {
 router.post("/", (req, res) => {
   if (!req.body.pic) {
     // Default image if one is not provided
-    req.body.pic = "http://placekitten.com/400/400";
+    req.body.pic =
+      "https://images.unsplash.com/photo-1483648969698-5e7dcaa3444f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80";
   }
   if (!req.body.city) {
     req.body.city = "Anytown";

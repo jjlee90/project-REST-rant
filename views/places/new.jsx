@@ -1,7 +1,7 @@
-import React from "react";
-import Def from "../default";
+const React = require("react");
+const Def = require("../default");
 
-export default function new_form() {
+function new_form() {
   return (
     <Def>
       <main>
@@ -38,3 +38,5 @@ export default function new_form() {
     </Def>
   );
 }
+
+module.exports = new_form;
