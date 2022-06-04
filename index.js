@@ -1,8 +1,7 @@
-// get environment variables
+// Modules and Globals
 require("dotenv").config();
-
-//require needed modules
 const express = require("express");
+const methodOverride = require("method-override");
 
 // initialize the app object
 const app = express();
@@ -14,6 +13,7 @@ app.engine("jsx", require("express-react-views").createEngine());
 app.use(express.static("public"));
 // tool to decrypt POST data
 app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride("_method"));
 
 // using router from places
 app.use("/places", require("./controllers/places"));
