@@ -50,3 +50,20 @@ main {
   margin-left: 20px;
   background-color: white;
 }
+
+.editImg {
+  width: 80%;
+  padding: 20px;
+}
+
+.sectionHead {
+  color: cornflowerblue;
+  padding: 5px;
+}
+
+.editSection {
+  height: 100%;
+}
+.comments {
+  padding: 20px;
+}
