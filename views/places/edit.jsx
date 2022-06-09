@@ -15,7 +15,7 @@ function edit_form(data) {
                 className="form-control"
                 name="name"
                 id="name"
-                value={data.place.name}
+                defaultValue={data.place.name}
                 required
               />
             </div>
@@ -26,7 +26,7 @@ function edit_form(data) {
                 type="url"
                 id="pic"
                 name="pic"
-                value={data.place.pic}
+                defaultValue={data.place.pic}
               />
             </div>
             <div className="form-group col-sm-6">
@@ -35,7 +35,7 @@ function edit_form(data) {
                 className="form-control"
                 id="city"
                 name="city"
-                value={data.place.city}
+                defaultValue={data.place.city}
               />
             </div>
             <div className="form-group col-sm-6">
@@ -44,7 +44,7 @@ function edit_form(data) {
                 className="form-control"
                 id="state"
                 name="state"
-                value={data.place.state}
+                defaultValue={data.place.state}
               />
             </div>
             <div className="form-group col-sm-12">
@@ -53,7 +53,7 @@ function edit_form(data) {
                 className="form-control"
                 name="cuisines"
                 id="cuisines"
-                value={data.place.cuisines}
+                defaultValue={data.place.cuisines}
                 required
               />
             </div>
