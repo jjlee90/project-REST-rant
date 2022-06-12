@@ -1,30 +1,38 @@
 const React = require("react");
 const Def = require("../default");
 
-function new_form() {
+function new_form(data) {
+  let message = "";
+  if (data.message) {
+    message = <h4 className="alert-danger">{data.message}</h4>;
+  }
   return (
     <Def>
       <main>
         <h1>Add a New Place</h1>
-
+        {message}
         <form method="POST" action="/places">
           <div className="row">
             <div className="form-group col-sm-6 col-md-4">
               <label htmlFor="name">Place Name</label>
               <input className="form-control" name="name" id="name" required />
             </div>
+
             <div className="form-group col-sm-6 col-md-4 ">
               <label htmlFor="pic">Place Picture</label>
               <input className="form-control" type="url" id="pic" name="pic" />
             </div>
+
             <div className="form-group col-sm-6 col-md-4 ">
               <label htmlFor="city">City</label>
               <input className="form-control" id="city" name="city" />
             </div>
+
             <div className="form-group col-sm-6 col-md-4 ">
               <label htmlFor="state">State</label>
               <input className="form-control" id="state" name="state" />
             </div>
+
             <div className="form-group col-sm-6 col-md-4 ">
               <label htmlFor="cuisines">Cuisines</label>
               <input
@@ -34,9 +42,16 @@ function new_form() {
                 required
               />
             </div>
+
             <div className="form-group col-sm-6 col-md-4 ">
-              <label for="founded">Founded Year</label>
-              <input className="form-control" id="founded" name="founded" />
+              <label htmlFor="founded">Founded Year</label>
+              <input
+                type="number"
+                className="form-control"
+                id="founded"
+                name="founded"
+                defaultValue={new Date().getFullYear()}
+              />
             </div>
 
             <input

@@ -12,6 +12,9 @@ function show(data) {
               alt={data.place.name}
               className="editImg"
             />
+            <h5>
+              Located in {data.place.city}, {data.place.state}
+            </h5>
           </div>
 
           <div className="container editSection col-md-6">
@@ -19,10 +22,9 @@ function show(data) {
             <h2 className="sectionHead">Rating</h2>
             <h5>Not Rated</h5>
             <h2 className="sectionHead">Description</h2>
-            <h5>
-              Located in {data.place.state}, and serving {data.place.cuisines}
-            </h5>
 
+            <h5>{data.place.showEstablished()}</h5>
+            <h4>Serving {data.place.cuisines}</h4>
             <div className="row justify-content-center my-4">
               <a
                 href={`/places/${data.id}/edit`}
