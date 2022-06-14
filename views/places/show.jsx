@@ -2,6 +2,7 @@ const React = require("react");
 const Def = require("../default");
 
 function show(data) {
+  console.log("show" + data.place.cuisines);
   let comments = <h3 className="inactive">No comments yet!</h3>;
   if (data.place.comments.length) {
     comments = data.place.comments.map((c) => {
@@ -12,7 +13,7 @@ function show(data) {
           <h3>
             <strong>- {c.author}</strong>
           </h3>
-          <h4>Raiting: {c.stars}</h4>
+          <h4>Rating: {c.stars}</h4>
         </div>
       );
     });
@@ -61,6 +62,25 @@ function show(data) {
           <hr />
           <h2 className="sectionHead">Comments</h2>
           {comments}
+          <div>
+            <h1>Add a Comment</h1>
+
+            <form method="POST" action={`/places/${data.place.id}/comment`}>
+              <label htmlFor="author">Author</label>
+              <input type="text" name="author" id="author" />
+
+              <label htmlFor="content">Content</label>
+              <input type="textarea" name="content" id="content" />
+
+              <label htmlFor="stars">Rating</label>
+              <input type="number" name="stars" id="stars" />
+
+              <label htmlFor="rant">Rant</label>
+              <input type="checkbox" name="rant" id="rant" />
+
+              <input type="submit" value="Add Comment" />
+            </form>
+          </div>
         </div>
       </main>
     </Def>
