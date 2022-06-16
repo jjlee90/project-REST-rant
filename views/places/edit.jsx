@@ -7,9 +7,9 @@ function edit_form(data) {
       <main>
         <h1>Edit place</h1>
 
-        <form method="POST" action={`/places/${data.id}?_method=PUT`}>
+        <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
           <div className="row">
-            <div className="form-group col-sm-6">
+            <div className="form-group col-sm-4">
               <label htmlFor="name">Place Name</label>
               <input
                 className="form-control"
@@ -19,7 +19,7 @@ function edit_form(data) {
                 required
               />
             </div>
-            <div className="form-group col-sm-6">
+            <div className="form-group col-sm-4">
               <label htmlFor="pic">Place Picture</label>
               <input
                 className="form-control"
@@ -29,7 +29,7 @@ function edit_form(data) {
                 defaultValue={data.place.pic}
               />
             </div>
-            <div className="form-group col-sm-6">
+            <div className="form-group col-sm-4">
               <label htmlFor="city">City</label>
               <input
                 className="form-control"
@@ -38,7 +38,7 @@ function edit_form(data) {
                 defaultValue={data.place.city}
               />
             </div>
-            <div className="form-group col-sm-6">
+            <div className="form-group col-sm-4">
               <label htmlFor="state">State</label>
               <input
                 className="form-control"
@@ -47,7 +47,7 @@ function edit_form(data) {
                 defaultValue={data.place.state}
               />
             </div>
-            <div className="form-group col-sm-12">
+            <div className="form-group col-sm-4">
               <label htmlFor="cuisines">Cuisines</label>
               <input
                 className="form-control"
@@ -55,6 +55,16 @@ function edit_form(data) {
                 id="cuisines"
                 defaultValue={data.place.cuisines}
                 required
+              />
+            </div>
+
+            <div className="form-group col-sm-4">
+              <label htmlFor="founded">Founded</label>
+              <input
+                className="form-control"
+                id="founded"
+                name="founded"
+                value={data.place.founded}
               />
             </div>
           </div>

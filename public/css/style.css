@@ -46,14 +46,16 @@ body {
 }
 
 main {
-  margin-right: 20px;
-  margin-left: 20px;
   background-color: white;
 }
 
 .editImg {
   width: 80%;
   padding: 20px;
+}
+
+.indexImg {
+  width: 100%;
 }
 
 .sectionHead {
@@ -66,4 +68,12 @@ main {
 }
 .comments {
   padding: 20px;
+}
+
+.reactStar {
+  color: rgb(235, 235, 17);
+}
+
+.placeCard {
+  margin-left: 15%;
 }

@@ -13,27 +13,27 @@ function new_form(data) {
         {message}
         <form method="POST" action="/places">
           <div className="row">
-            <div className="form-group col-sm-6 col-md-4">
+            <div className="form-group col-sm-4 col-md-4">
               <label htmlFor="name">Place Name</label>
               <input className="form-control" name="name" id="name" required />
             </div>
 
-            <div className="form-group col-sm-6 col-md-4 ">
+            <div className="form-group col-sm-4 col-md-4 ">
               <label htmlFor="pic">Place Picture</label>
               <input className="form-control" type="url" id="pic" name="pic" />
             </div>
 
-            <div className="form-group col-sm-6 col-md-4 ">
+            <div className="form-group col-sm-4 col-md-4 ">
               <label htmlFor="city">City</label>
               <input className="form-control" id="city" name="city" />
             </div>
 
-            <div className="form-group col-sm-6 col-md-4 ">
+            <div className="form-group col-sm-4 col-md-4 ">
               <label htmlFor="state">State</label>
               <input className="form-control" id="state" name="state" />
             </div>
 
-            <div className="form-group col-sm-6 col-md-4 ">
+            <div className="form-group col-sm-4 col-md-4 ">
               <label htmlFor="cuisines">Cuisines</label>
               <input
                 className="form-control"
@@ -43,7 +43,7 @@ function new_form(data) {
               />
             </div>
 
-            <div className="form-group col-sm-6 col-md-4 ">
+            <div className="form-group col-sm-4 col-md-4 ">
               <label htmlFor="founded">Founded Year</label>
               <input
                 type="number"
@@ -55,7 +55,7 @@ function new_form(data) {
             </div>
 
             <input
-              className="btn btn-primary "
+              className="btn btn-primary"
               type="submit"
               value="Add Place"
             />
