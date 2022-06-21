@@ -23,7 +23,7 @@ function show(data) {
     rating = (
       <h3>
         <span className="reactStar">
-          {Array.from({ length: stars }, () => reactStar)}{" "}
+          {Array.from({ length: stars }, () => reactStar)}
         </span>
         stars
       </h3>
@@ -71,7 +71,7 @@ function show(data) {
 
           <div className="container editSection col-md-6">
             <h1>{data.place.name}</h1>
-            <h2 className="sectionHead">Rating {reactStar}</h2>
+            <h2 className="sectionHead">Rating</h2>
             {rating}
             <br />
 
