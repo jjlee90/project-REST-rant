@@ -10,8 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "npm i --legacy-peer-deps",
-    "heroku-postbuild": "npm i --legacy-peer-deps --prod"
+    "heroku-cleanup": "npm i --legacy-peer-deps"
   },
   "keywords": [],
   "author": "",
