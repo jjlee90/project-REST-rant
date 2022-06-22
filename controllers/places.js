@@ -1,7 +1,6 @@
 // making a controller
 const router = require("express").Router();
 const db = require("../models");
-const places = require("../models/places.js");
 
 // route for places
 router.get("/", (req, res) => {
