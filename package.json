@@ -2,8 +2,8 @@
   "name": "rest-rant",
   "version": "1.0.0",
   "engines": {
-    "node": "17.x",
-    "npm": "7.x"
+    "node": "18.x",
+    "npm": "8.x"
   },
   "description": "",
   "main": "index.js",
